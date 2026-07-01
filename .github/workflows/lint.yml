@@ -1,6 +1,6 @@
 # what is  the goal of linter.
 # Goal : whenever someone changes the python code, the linter will check syntx, code, indentation is correct or not.
-
+# check the indentation and spelling
 name: Auto linter
 
 on:
