@@ -1,0 +1,17 @@
+# what is  the goal of linter.
+# Goal : whenever someone changes the python code, the linter will check syntx, code, indentation is correct or not.
+
+name: Auto linter
+
+on:
+  push:
+    paths: "*.py"
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout/clone the code
+        uses: actions/checkout@v7
+        - name: Install Linter
+          run: pip install ruff
+      
